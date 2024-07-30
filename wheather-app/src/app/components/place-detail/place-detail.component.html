@@ -1,1 +1,19 @@
-<p>place-detail works!</p>
+<div class="card">
+    <div class="card-header">
+        <div class="row justify-content-between align-items-center mb-1">
+            <div class="col-6">
+            </div>
+            <div class="col-12 d-flex flex-column">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Insert the place name">
+                    <input type="text" class="form-control" placeholder="place type">
+                    <input type="text" class="form-control" placeholder="your address">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-outline-secondary" (click)="createPlace()"
+                            [disabled]="false">Create Place</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

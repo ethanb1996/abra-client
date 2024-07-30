@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './place-detail.component.scss'
 })
 export class PlaceDetailComponent {
+createPlace() {
+throw new Error('Method not implemented.');
+}
 
 }
