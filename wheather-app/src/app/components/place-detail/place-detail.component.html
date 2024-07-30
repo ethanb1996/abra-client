@@ -4,15 +4,16 @@
             <div class="col-6">
             </div>
             <div class="col-12 d-flex flex-column">
+                <form [formGroup]="placeForm" (ngSubmit)="createPlace()">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Insert the place name">
-                    <input type="text" class="form-control" placeholder="place type">
-                    <input type="text" class="form-control" placeholder="your address">
-                    <div class="input-group-append">
-                        <button type="button" class="btn btn-outline-secondary" (click)="createPlace()"
-                            [disabled]="false">Create Place</button>
+                        <input type="text" class="form-control" formControlName="name" placeholder="Insert the place name">
+                        <input type="text" class="form-control" formControlName="type" placeholder="place type">
+                        <input type="text" class="form-control" formControlName="address" placeholder="your address">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-secondary" (click)="createPlace()">Create Place</button>
+                        </div>
                     </div>
-                </div>
+                </form>   
             </div>
         </div>
     </div>
